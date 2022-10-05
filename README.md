@@ -26,6 +26,11 @@ ls sub* mp* | xargs -tI{} fastqc -o fastqc {}
 mkdir multiqc
 multiqc -o multiqc fastqc
 ```
+![](/img/multiqc_gs.png)
+![](/img/multiqc_psqs.png)
+![](/img/multiqc_sqh.png)
+
+
 ### Подрезаем чтения и удаляем адаптеры
 ```
 platanus_trim sub*
@@ -47,6 +52,11 @@ ls sub* mp* | xargs -tI{} fastqc -o fastqc_trimmed {}
 ```
 multiqc -o multiqc_trimmed fastqc_trimmed
 ```
+![](/img/multiqc_trimmed_gs.png)
+![](/img/multiqc_trimmed_psqs.png)
+![](/img/multiqc_trimmed_sqh.png)
+
+
 ### Cобираем контиги 
 ```
 time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
