@@ -77,3 +77,5 @@ rm sub2.fastq.trimmed
 rm mp1.fastq.int_trimmed
 rm mp2.fastq.int_trimmed
 ```
+
+### Ноутбук в src
